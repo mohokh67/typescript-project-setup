@@ -7,6 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "wireit",
+    "lint:tsc": "wireit",
     "lint": "wireit",
     "prepare": "wireit",
     "test": "wireit",
@@ -19,6 +20,13 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-angular": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^31.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "husky": "^8.0.3",
     "rimraf": "^4.1.1",
     "tsup": "^6.5.0",
@@ -33,6 +41,17 @@
       ]
     },
     "lint": {
+      "command": "eslint --fix --color --max-warnings 0 --cache --cache-location .eslintcache .",
+      "files": [
+        "src/**/*.ts",
+        ".eslintignore",
+        ".eslintrc.js"
+      ],
+      "dependencies": [
+        "lint:tsc"
+      ]
+    },
+    "lint:tsc": {
       "command": "tsc"
     },
     "prepare": {
