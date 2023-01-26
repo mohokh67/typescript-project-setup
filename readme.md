@@ -1,5 +1,6 @@
 # Typescript project setup - 2023
 ----------
+Link to the video tutorial: https://youtu.be/ON7a99_QvZg
 #### List of all packages and libraries I used:
 - [direnv](https://direnv.net/docs/installation.html)
 - [nvm](https://github.com/nvm-sh/nvm)
