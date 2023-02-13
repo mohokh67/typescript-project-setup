@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/mohokh67/typescript-project-setup/compare/v1.0.0...v1.1.0) (2023-02-13)
+
+
+### Features
+
+* add eslint spell checker plugin ([3532720](https://github.com/mohokh67/typescript-project-setup/commit/35327209a3f6305ab4318ae2755c5247dd737472))
+
 ## 1.0.0 (2023-01-23)
 
 
