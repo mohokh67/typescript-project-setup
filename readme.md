@@ -9,3 +9,5 @@ Link to the video tutorial: https://youtu.be/ON7a99_QvZg
 - [Release Please](https://github.com/googleapis/release-please)
 - [tsup](https://github.com/egoist/tsup)
 - [eslint](https://eslint.org)
+
+Link to the video for adding ESLint spell checker: https://youtu.be/SBH8FB7cReE
