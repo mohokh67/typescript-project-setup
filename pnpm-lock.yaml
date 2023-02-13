@@ -4,12 +4,13 @@ specifiers:
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-angular': ^17.4.2
   '@typescript-eslint/eslint-plugin': ^5.0.0
-  '@typescript-eslint/parser': 5.48.2
+  '@typescript-eslint/parser': ^5.48.2
   eslint: ^8.0.1
   eslint-config-standard-with-typescript: ^31.0.0
   eslint-plugin-import: ^2.25.2
   eslint-plugin-n: ^15.0.0
   eslint-plugin-promise: ^6.0.0
+  eslint-plugin-spellcheck: ^0.0.20
   husky: ^8.0.3
   rimraf: ^4.1.1
   tsup: ^6.5.0
@@ -26,6 +27,7 @@ devDependencies:
   eslint-plugin-import: 2.27.5_2l6piu6guil2f63lj3qmhzbnn4
   eslint-plugin-n: 15.6.1_eslint@8.32.0
   eslint-plugin-promise: 6.1.1_eslint@8.32.0
+  eslint-plugin-spellcheck: 0.0.20_eslint@8.32.0
   husky: 8.0.3
   rimraf: 4.1.1
   tsup: 6.5.0_typescript@4.9.4
@@ -1428,6 +1430,17 @@ packages:
       eslint: 8.32.0
     dev: true
 
+  /eslint-plugin-spellcheck/0.0.20_eslint@8.32.0:
+    resolution: {integrity: sha512-GJa6vgzWAYqe0elKADAsiBRrhvqBnKyt7tpFSqlCZJsK2W9+K80oMyHhKolA7vJ13H5RCGs5/KCN+mKUyKoAiA==}
+    peerDependencies:
+      eslint: '>=0.8.0'
+    dependencies:
+      eslint: 8.32.0
+      globals: 13.19.0
+      hunspell-spellchecker: 1.0.2
+      lodash: 4.17.21
+    dev: true
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -1866,6 +1879,11 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+    dev: true
+
+  /hunspell-spellchecker/1.0.2:
+    resolution: {integrity: sha512-4DwmFAvlz+ChsqLDsZT2cwBsYNXh+oWboemxXtafwKIyItq52xfR4e4kr017sLAoPaSYVofSOvPUfmOAhXyYvw==}
+    hasBin: true
     dev: true
 
   /husky/8.0.3:
